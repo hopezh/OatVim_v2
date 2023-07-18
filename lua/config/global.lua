@@ -2,6 +2,9 @@
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
+vim.g.mapleader = " " -- use space as the leader key
+vim.g.maplocalleader = " "
+
 vim.opt.autoindent = true
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
 vim.opt.colorcolumn = "80" -- highlight the 80th column, N/A when virt-column.nvim is used
