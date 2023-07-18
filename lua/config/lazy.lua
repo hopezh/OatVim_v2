@@ -18,6 +18,19 @@ vim.opt.runtimepath:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
+		-- [only applicable when lazyvim is installed] add LazyVim and import its plugins
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+
+		-- [only applicable when lazyvim is installed] import any extras modules here
+		-- { import = "lazyvim.plugins.extras.lang.typescript" },
+		-- { import = "lazyvim.plugins.extras.lang.json" },
+		-- { import = "lazyvim.plugins.extras.editor.leap" },
+		-- { import = "lazyvim.plugins.extras.editor.flash" }, -- this disables leap.nvim & flit.nvim
+		-- { import = "lazyvim.plugins.extras.linting.eslint" },
+		-- { import = "lazyvim.plugins.extras.formatting.prettier" },
+		-- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+
+		-- import/override with your plugins
 		{ import = "plugins" }, -- load plugin config files from /lua/plugins folder
 	},
 
