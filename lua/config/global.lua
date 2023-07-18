@@ -2,7 +2,8 @@
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
-vim.g.mapleader = " " -- use space as the leader key
+-- use space as the leader key -------------------------------------------------
+vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.opt.autoindent = true
@@ -11,7 +12,7 @@ vim.opt.colorcolumn = "80" -- highlight the 80th column, N/A when virt-column.nv
 vim.opt.fileformat = "unix"
 
 -- treesitter-based folding ----------------------------------------------------
-vim.opt.foldlevel = 20
+vim.opt.foldlevel = 100
 vim.opt.foldcolumn = "3"
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
