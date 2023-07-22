@@ -2,13 +2,19 @@
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
+-- use space as the leader key -------------------------------------------------
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 vim.opt.autoindent = true
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
 vim.opt.colorcolumn = "80" -- highlight the 80th column, N/A when virt-column.nvim is used
+vim.opt.conceallevel = 3 -- Hide * markup for bold and italic
+vim.opt.cursorline = true -- Enable highlighting of the current line
 vim.opt.fileformat = "unix"
 
 -- treesitter-based folding ----------------------------------------------------
-vim.opt.foldlevel = 20
+vim.opt.foldlevel = 100
 vim.opt.foldcolumn = "3"
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
@@ -18,6 +24,7 @@ vim.opt.guicursor =
 	"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
 vim.opt.hlsearch = true
+vim.opt.ignorecase = true
 vim.opt.incsearch = true
 vim.opt.mouse = "a" -- enable mouse
 vim.opt.mousefocus = true
@@ -27,8 +34,11 @@ vim.opt.shiftwidth = 4
 vim.opt.showcmd = true -- show command in statusline
 vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes:3" -- always show signcolumn, max width=3
+vim.opt.smartindent = true -- Insert indents automatically
 vim.opt.smarttab = true
 vim.opt.softtabstop = 4
+vim.opt.splitbelow = true -- Put new windows below current
+vim.opt.splitright = true -- Put new windows right of current
 vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 vim.opt.timeoutlen = 400 -- unti which-key pops up
